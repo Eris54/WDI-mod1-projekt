@@ -31,33 +31,8 @@ body p {
 
   border: 1px solid black;
   width: 10vw;
-  height: 3vh;
-
-  background-color: #bbb;
-}
-
-#table {
-  display: inline-flex;
-  
-  
-  margin-top: 5%;
-}
-
-#table a {
-  text-align: center;
-
-  border: 1px solid black;
-  width: 10vw;
-
-  background-color: #bbb;
-}
-
-table tr td {
-  font-size: 200%;
-  text-align: center;
-
-  border: 1px solid black;
-  width: 10vw;
+  line-height: 120%;
+  max-height: 4vh;
 
   background-color: #bbb;
 }
