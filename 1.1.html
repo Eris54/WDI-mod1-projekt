@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <title> Liczby binarne </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="Styl1.css"/>
+  <script src="Scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favico.ico" />
+</head>
+<body>
+  
+  <h1>Czym jest system Binarny?</h1>
+  <p>
+    Tak jak powszechnie stosowany system liczbowy dziesiętny, system binarny (zwany także dwójkowym) jest systemem pozycyjnym. Co to znaczy system pozycyjny dowiemy się BARDZO dobrze na lekcjach z algebry i logiki, na razie wystarczy nam wiedza, iż posługuje się takimi samymi regułami jak system dziesiętny. <br />
+    Jedna wartość jest nazywana <strong>bit</strong>em. Jeden <strong>byte</strong> to 8 bitów, może przechowywać wartości do 2<sup>8</sup> (maksymalna wartość jednego byte'a to 255). <br />
+    W programowanie liczby binarne zaznaczane są przedrostkiem <i style="font-family: monospace;">0b</i>.
+  </p>
+  
+  <div class="box-container">
+    <div class="box">2<sup>-1</sup></div>
+    <div class="box">2<sup>0</sup></div>
+    <div class="box">2<sup>1</sup></div>
+    <div class="box">2<sup>2</sup></div>
+    <div class="box">2<sup>3</sup></div>
+  </div>
+  <div class="box-container">
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+  </div>
+  <div class="box-container" style="margin-top: 1vh;">
+    <div class="box">0.5</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">4</div>
+    <div class="box">8</div>
+  </div>
+  
+  <p>
+    Każda kolejna liczba przyjmuje wartość dwa razy większą niż poprzednia. <br />
+    Żeby przekształcić liczbę dwójkową na dziesiętną, wystarczy pomnożyć każdą cyfrę przez potęgę dwójki odpowiadającą miejscu (miejsce przed przecinkiem zaliczamy jako 2<sup>0</sup>), a następnie, dodać całość; otrzymamy w ten sposób liczbę w systemie dziesiętnym. Możemy w taki sposób dodać:
+  </p>
+  <div class="box-container" style="margin-top: 1vh;">
+    <div class="box">13.5</div> =
+    <div class="box">0.5</div> +
+    <div class="box">1</div> +
+    <div class="box">0</div> +
+    <div class="box">4</div> +
+    <div class="box">8</div> 
+  </div>
+  
+  <p>
+    W naszym przypadku, otrzymana liczba to 13.5
+  </p>
+  
+  <a class="submit" href="1.2.html">Next</a>
+  
+</body>
+  
+</html>
