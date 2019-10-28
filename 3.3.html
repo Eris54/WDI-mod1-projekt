@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Liczby binarne </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="Styl1.css"/>
+  <script src="Scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favico.ico" />
+</head>
+  
+<body style="font-size: 115%;">
+  
+  <h2 style="margin-top: 0;">Dzielenie</h2>
+  Dzielenie zaczynamy biorąc tyle cyfr z licznika (zaczynając od końca) ile ma mianownik i sprawdzamy czy jest większy, jeśli tak nie jest, musi dobrać jeszcze jedną cyfrę.
+  <div class="box-container" style="margin-top: 1%;">
+    <div class="box" style="opacity: 0;"></div> <b style="font-size: 130%;"> &divide; </b>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div> <b style="font-size: 130%;"> = </b>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container" style="margin-top: 2%;">
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <b style="font-size: 130%;"> &nbsp;&lt;&nbsp; </b>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+  </div>
+  <p>
+    Więc musimy dobrać jeszcze jedną cyfrę i zapisać 0. Następnie odejmujemy od naszego okrojonego mianownika licznik.
+  </p>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  <b style="font-size: 130%;"> -&nbsp; </b>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  <b style="font-size: 130%;"> = </b>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div> &nbsp;&nbsp;&nbsp;
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <p>
+    Zapisujemy 1 oraz powtarzamy działanie dobierając kolejną cyfrę
+  </p>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div> <b style="font-size: 130%;"> -&nbsp; </b>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  <b style="font-size: 130%;"> = </b>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  <b style="font-size: 130%;"> -&nbsp; </b>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  <b style="font-size: 130%;"> = </b>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container">
+    <div class="box" style="opacity: 0;"></div>  &nbsp;&nbsp;&nbsp;
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  
+  <p>
+    Po dotarciu do końca liczby stawiamy przecinek i dobieramy 0 do końca liczby.
+  </p>
+  <div class="box-container">  <b style="font-size: 130%;"> -&nbsp; </b>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container"> &nbsp;&nbsp;&nbsp;
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  Dzielenie kończymy gdy otrzymujemy resztę 0. Wynik to 0111.1 <br />
+  
+  <a class="submitP" href="3.2.html">Prev</a>
+  <a class="submitN" href="4.1.html">Next</a>
+</body>
+</html>

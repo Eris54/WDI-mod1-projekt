@@ -1,3 +1,119 @@
+/*Specific*/
+#returna {
+  z-index: 10000;
+  font-size: 140%;
+  
+  position: absolute;
+  background: #bbb;
+  border: 3px solid #bbb;
+  border-radius: 100000px;
+  top: 21%;
+  left: 43.6%;
+  opacity: 0;
+  
+  animation-name: returnplus;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes returnplus {
+  from {
+    top: 21%;
+    left: 43.6%;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.8;
+    top: 24%;
+    left: 43.6%;
+  }
+  20% {
+    opacity: 1;
+    top: 31%;
+    left: 38.5%;
+  }
+  40% {
+    top: 20%;
+    left: 33.5%;
+  }
+  60% {
+    top: 31%;
+    left: 33.5%;
+    opacity: 1;
+  }
+  75% {
+  top: 38%;
+  left: 23.5%;
+  opacity: 1;
+  }
+  78% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0;
+    top: 38%;
+    left: 23.5%;
+  }
+}
+
+#returnb {
+  z-index: 10000;
+  font-size: 140%;
+  
+  position: absolute;
+  background: #bbb;
+  border: 3px solid #bbb;
+  border-radius: 100000px;
+  top: 49%;
+  left: 53.8%; 
+  opacity: 0;
+  
+  animation-name: returnminus;
+	animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+}
+
+@keyframes returnminus {
+  from {
+    opacity: 0;
+    top: 49%;
+    left: 53.8%; 
+  }
+  5% {
+    opacity: 0.8;
+    top: 49%;
+    left: 53.8%; 
+  }
+  20% {
+    opacity: 1;
+    top: 49%;
+    left: 63%;
+  }
+  21% {opacity: 0;}
+  25% {opacity: 0;}
+  30% {opacity: 1;}
+  40% {
+    top: 58%;
+  }
+  60% {
+    top: 66%;
+    left: 64%;
+    opacity: 1;
+  }
+  78% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    top: 66%;
+    left: 64%;
+  }
+}
+
+/* General */
 body {
   display: flex;
   align-items: center;
@@ -37,11 +153,24 @@ body p {
   background-color: #bbb;
 }
 
-.submit {
+.submitN, .submitP {
   position: absolute;
-  bottom: 5%;
   text-align: center;
 	width: 5vw;
-  border: 5px inset green;
+  border: 5px inset #666;
   background-color: #ccc;
+}
+
+.submitN:hover, .submitP:hover {
+  border: 5px outset #666;
+}
+
+.submitP {
+  bottom: 5%;
+  left: 40%;
+}
+
+.submitN {
+  bottom: 5%;
+  left: 50%;
 }

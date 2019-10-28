@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Liczby binarne </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="Styl1.css"/>
+  <script src="Scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favico.ico" />
+</head>
+  
+<body>
+  
+  <h1>Jak działania arytmetyczne są zapisywane w komputerach</h1>
+  
+  <p>
+    Działania arytmetyczne są zapisywane dzięki działaniom logicznym przedstawionych wcześniej.
+  </p>
+  <h2>Dodawanie</h2>
+  <p>
+    Mamy dwa Bity A i B, suma jest zapisywana jako A XOR B, natomiatst <i>carry</i> (nie mam pojęcia jak to się nazywa po polsku, później poprawię) jest zapisywane jako A AND B. <br />
+    Wynik A AND B jest dodawany do bitu na następnym miejscu.
+  </p>
+  
+  <h2>Odejmowanie</h2>
+  <p>
+    Różnica jest zapisywana jako ((A NAND B) NAND B) NAND (A NAND B) NAND B), a <i>borrow</i> (...) jest zapisywane jako !((A NAND B) NAND B).*
+  </p>
+  
+  <i>*NAND oznacza po prostu Not AND, wynik NAND'u jest odwrotny do wyniku AND'u z tymi samymi wartościami.</i>
+  <a class="submitP" href="5.1.html">Prev</a>
+  <a class="submitN" href="5.3.html">Next</a>
+</body>
+</html>

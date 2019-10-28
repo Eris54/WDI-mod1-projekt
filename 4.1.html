@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Liczby binarne </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="Styl1.css"/>
+  <script src="Scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favico.ico" />
+</head>
+  
+<body style="font-size: 115%;">
+  <h1>Jak zapisywane są liczby ujemne w komputerze?</h1>
+  <p>
+    Pierwszy bit przechowuje informacje o znaku liczby; 0 oznacza liczbę dodatnią, 1 oznacza liczbę ujemną. <br />
+    Aby odejmować i dodawać liczby ujemne, musimy te liczby przekształcić odejmując 1, a następnie negując każdą cyfrę. <br />
+    Na przykładzie liczby 92:
+  </p>
+  
+  <div class="box-container"> <b style="font-size: 130%;">-&nbsp;</b>
+    <div class="box">0</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+  </div>
+  <div class="box-container"> <b style="font-size: 130%;">=</b>
+    <div class="box">1</div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+    <div class="box" style="opacity: 0;"></div>
+  </div>
+  <div class="box-container" style="margin-top: 1%;">&nbsp;&nbsp;&nbsp;
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+  </div>
+  <p>Liczbę teraz odwracamy i otrzymujemy -92:</p>
+  <div class="box-container">
+    <div class="box">0</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+    <div class="box">0</div>
+    <div class="box">1</div>
+  </div>
+  
+  <h1>Jak zapisywane są liczby dziesiętne w komputerze?</h1>
+  <p>
+    Komputery do tego zapisu używają potęgi liczby 10, tak jak w zapisie naukowym (Np. 3&times;10<sup>-8</sup>). <br />
+    Są one zapisywane na 32 bitach:
+  </p>
+  <div class="box-container">&times;23&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="box">Liczba</div> &times;8 &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="box">Wykładnik</div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="box">Znak</div> 
+  </div>
+  <p>
+    Bit "Znak" oznacza znak liczby, tak jak zostało to wytłumaczone wyżej. <br/ >
+    Następne bity "Wykładnik" przedstawiają potęgę do której podnosimy liczbę 10 (to jest normalna liczba typu integer, więc może być ujemna). <br />
+    Bity pod nazwą "Liczba" są normalnym zapisem liczby.
+    
+  <a class="submitP" href="3.3.html">Prev</a>
+  <a class="submitN" href="5.1.html">Next</a>
+  </p>
+</body>
+</html>
